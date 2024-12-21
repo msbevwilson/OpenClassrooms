@@ -183,20 +183,20 @@
         gap: 10px;
         white-space: nowrap;
     }
+    .filter i { 
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+    }
     .filter:hover {
         background: #DEEBFF;
     }
     .infobar-container {
         display: flex;
         flex-direction: row;
-        align-items: center;
         padding: 0px;
         gap: 10px;
-        width: 1340px;
-        height: 24px;
-        flex: none;
-        flex-grow: 0;
-        z-index: 3;
+        /* flex-wrap: wrap; */
     }
     .info-icon-container {
         display: flex;
@@ -216,8 +216,8 @@
         font-size: 16px;
         line-height: 19px;
         color: #000000;
-        flex: none;
-        flex-grow: 1;
+        /* flex: none; */
+        /* flex-grow: 1; */
     }
     .accommodation-and-popular {
         display: flex;
@@ -237,14 +237,6 @@
         align-items: flex-start;
         gap: 30px;
         flex-grow: 1;
-    }
-    .accommodation-title {
-        margin: 0;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 26px;
-        color: #000000;
     }
     .accommodation-container {
         display: flex;
@@ -313,16 +305,6 @@
         flex: none;
         flex-grow: 0;
     }
-    .popular-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 26px;
-        color: #000000;
-    }
     .popular-cards {
         display: flex;
         flex-direction: column;
@@ -348,6 +330,9 @@
         flex-direction: column;
         justify-content: space-between;
         box-sizing: border-box;
+        background: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
     .popular-cards .card-title {
         margin-top: 10px;
@@ -502,14 +487,6 @@
         width: 335px;
         height: 98px;
     }
-    .headline-title {
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 25.83px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-    }
     .headline-subtitle {
         font-size: 16px;
         font-weight: 400;
@@ -521,12 +498,12 @@
     .search-bar-container {
         display: flex;
         flex-direction: row;
-        align-items: center;
         border: 1px solid #F2F2F2;
         padding: 0px;
         gap: 24px;
-        width: 335px;
+        /* width: 335px; */
         height: 49px;
+        justify-content: space-between;
     }
     .search-bar-left {
         display: flex;
@@ -545,9 +522,8 @@
         color: black;
     }
     .search-input {
-        width: 147px;
+        width: 220px;
         height: 21px;
- 
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -562,7 +538,7 @@
         flex-wrap: wrap;
         padding: 0px;
         gap: 20px;
-        width: 335px;
+        /* width: 335px; */
         height: 161px;
     }
     .filter {
@@ -572,10 +548,16 @@
         align-items: center;
         padding: 4px 19px;
         gap: 10px;
-        width: 162.5px;
+        width: 179.5px;
         height: 50px;
         border: 2px solid #D9D9D9;
         border-radius: 25px;
+    }
+    .accommodation-and-popular {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
     }
     .accommodation {
         display: flex;
@@ -602,6 +584,7 @@
         display: inline;
         width: 17px;
         height: 17px;
+        color: white;
      }
      .search-button {
         width: 49px;
