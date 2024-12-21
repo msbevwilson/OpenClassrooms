@@ -194,9 +194,8 @@
     .infobar-container {
         display: flex;
         flex-direction: row;
-        padding: 0px;
+        padding-bottom: 30px;
         gap: 10px;
-        /* flex-wrap: wrap; */
     }
     .info-icon-container {
         display: flex;
@@ -216,27 +215,21 @@
         font-size: 16px;
         line-height: 19px;
         color: #000000;
-        /* flex: none; */
-        /* flex-grow: 1; */
     }
     .accommodation-and-popular {
         display: flex;
         flex-direction: row;
-        align-items: center;
         gap: 40px;
     }
     .accommodation-and-popular section {
         background-color: var(--main-bg-color);
         border-radius: 20px;
         padding: 30px;
-        box-sizing: border-box;
     }
     .accommodation {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 30px;
-        flex-grow: 1;
     }
     .accommodation-container {
         display: flex;
@@ -268,6 +261,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding: 0px 15px;
+        gap: 8px;
     }
     .accommodation-card-title {
         font-style: normal;
@@ -304,6 +299,24 @@
         color: #000000;
         flex: none;
         flex-grow: 0;
+    }
+    .popular {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .popular-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .popular-title h2 {
+        width: 369px;
+    }
+    .popular-title i {
+        width: 18px;
+        height: 15.75px;
     }
     .popular-cards {
         display: flex;
