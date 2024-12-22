@@ -465,7 +465,6 @@
         box-sizing: border-box;
     }
     .body {
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
@@ -473,38 +472,13 @@
         width: 375px;
     }
     .header {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px;
         width: 375px;
         height: 115px;
     }
     .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         padding: 30px;
-    }
-    .logo img {
-        height: 19px;
-    }
-    .nav {
-        display: flex;
-        flex-direction: row;
-        gap: 68px;
-    }
-    .menu {
-        height: 35px;
-    }
-    .menu a {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        color: #0065FC;
-        text-decoration: none;
     }
     .menu:hover {
         border-bottom: 2px solid #0065FC;
@@ -513,141 +487,60 @@
         width: 335px;
         height: 98px;
     }
-    .headline-subtitle {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 18.78px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-    }
     .search-bar-container {
-        display: flex;
-        flex-direction: row;
-        border: 1px solid #F2F2F2;
-        padding: 0px;
-        gap: 24px;
-        /* width: 335px; */
-        height: 49px;
         justify-content: space-between;
-    }
-    .search-bar-left {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 49px;
-        left: 0px;
-        top: 0px;
-        background: #F2F2F2;
-        border: 1px solid #F2F2F2;
-        border-radius: 15px 0px 0px 15px;
- 
-    }
-    .fa-location-dot {
-        color: black;
     }
     .search-input {
         width: 220px;
-        height: 21px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
     }
     .filter-bar-container {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
         padding: 0px;
         gap: 20px;
-        /* width: 335px; */
         height: 161px;
     }
-    .filter {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 4px 19px;
-        gap: 10px;
-        width: 179.5px;
-        height: 50px;
-        border: 2px solid #D9D9D9;
-        border-radius: 25px;
-    }
     .accommodation-and-popular {
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        gap: 40px;
     }
     .accommodation {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         padding: 20px;
         gap: 15px;
         width: 375px;
         flex-grow: 0;
     }
     .accommodation-container {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
     }
     .popular-card {
         width: 335px;
     }
     .activities {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 30px;
-        gap: 30px;
         width: 375px;
     }
     .activities-container {  
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
     }
     .activities-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
         align-items: center;
         width: 315px;
         height: 200px;
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
     }
     .activities-card img {
         width: 315px;
         height: 141px;
-        border-radius: 20px 20px 0px 0px;
-        flex: none;;
     }
     .footer {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
         padding: 30px;
         gap: 50px;
         width: 375px;
         height: 461px;
-        background: #F2F2F2;
-        flex: none;
     }
     .footerContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         padding: 0px;
         gap: 15px;
         width: 263.67px;
@@ -656,24 +549,10 @@
     .footerHeader {
         width: 104.65px;
         height: 21px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        color: #000000;
-        flex: none;
-        flex-grow: 0;
     }
     .footerLink {
         width: 239.2px;
         height: 19px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #000000;
-        flex: none;
-        flex-grow: 0;
     }
 }
 
