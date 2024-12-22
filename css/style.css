@@ -230,26 +230,26 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: space-between;
     }
-    .accommodation-container {
+    .accommodation-container { /* frame 15 */
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         gap: 30px;
     }
-    .accommodation-card {
+    .accommodation-card { /* Card/Main */
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 0px 0px 15px;
+        /* gap: 4px; */
         width: 250.33px;
         height: 207.25px;
         background: #FFFFFF;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-        flex-grow: 1;
     }
-    .accommodation-card img {
+    .accommodation-card img { /* Rectangle 20 */
         object-fit: cover;
         box-sizing: border-box;
         width: 250.33px;
@@ -257,23 +257,31 @@
         border: 5px solid #FFFFFF;
         border-radius: 20px 20px 0px 0px;
     }
-    .accommodation-card-content {
+    .accommodation-card-content { /* Frame 16 */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px 15px;
         gap: 8px;
+        width: 250.33px;
+        height: 64.25px;
+        justify-content: center;
     }
-    .accommodation-card-title {
+    .accommodation-card-title { /* Hôtel du port */ /* Card/Title */
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
+        width: 220.33px;
+        height: 19px;
     }
-    .accommodation-card-subtitle {
+    .accommodation-card-subtitle { /* Nuit à partir de 52€ */
         width: 220.33px;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
+        width: 220.33px;
+        height: 16px;
     }
     .dollar {
         font-size: 14px;
@@ -281,8 +289,7 @@
         line-height: 16.44px;
         text-align: left;
     }
-    .accommodation-card-rating {
-        width: 81px;
+    .accommodation-card-rating { /* Stars */
         height: 13.25px;
         flex: none;
         flex-grow: 0;
@@ -291,7 +298,6 @@
         color: var(--main-bg-color);
     }
     .accommodation-show-more {
- 
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -326,15 +332,22 @@
         gap: 30px;
         width: 369px;
     }
-    .popular-cards .card {
+    .popular-card {
         display: flex;
-        margin-top: 33px;
+        flex-direction: row;
+        width: 369px;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
     }
-    .popular-cards img {
+    .popular-card img { /* Rectangle 24 */
         width: 33%;
         height: 136px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        object-fit: cover;
+        box-sizing: border-box;
+        border: 5px solid #FFFFFF;
     }
     .popular-cards .card-content {
         width: 67%;
@@ -371,7 +384,7 @@
         line-height: 26px;
         color: #000000;
     }
-    .activities-row {  
+    .activities-container {  
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -403,7 +416,7 @@
         flex: none;
         flex-grow: 0;
     }
-    .footerContainer {
+    .footer {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -411,7 +424,7 @@
         height: 163px;
         background: #F2F2F2;
     }
-    .footerColumn {
+    .footerContainer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -586,6 +599,81 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
+    }
+    .popular-card {
+        width: 335px;
+    }
+    .activities {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 30px;
+        width: 375px;
+    }
+    .activities-container {  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .activities-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 315px;
+        height: 200px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+    .activities-card img {
+        width: 315px;
+        height: 141px;
+        border-radius: 20px 20px 0px 0px;
+        flex: none;;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 50px;
+        width: 375px;
+        height: 461px;
+        background: #F2F2F2;
+        flex: none;
+    }
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 15px;
+        width: 263.67px;
+        height: 123px;
+    }
+    .footerHeader {
+        width: 104.65px;
+        height: 21px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        flex: none;
+        flex-grow: 0;
+    }
+    .footerLink {
+        width: 239.2px;
+        height: 19px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        flex: none;
+        flex-grow: 0;
     }
 }
 
