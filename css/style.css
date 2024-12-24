@@ -169,7 +169,7 @@
     }
     .filter-bars {
         display: flex;
-        gap: 15px;
+        /* gap: 15px; */
     }
     .filter {
         box-sizing: border-box;
@@ -459,11 +459,11 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-    .main-container {
+    /* .main-container {
         width: 100%;
         padding: 0px;
         box-sizing: border-box;
-    }
+    } */
     .body {
         flex-direction: column;
         align-items: flex-start;
@@ -585,15 +585,29 @@
     }
 }
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
+/* @media (min-width: 481px) and (max-width: 767px) {
     body {
         background-color: yellow;
     }
-}
+} */
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        background-color: blue;
+
+    .filter-bar-container {
+        /* gap: 20px; */
+        /* width: 668px; */
+        height: 91px;
     }
+    .accommodation-and-popular {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .accommodation-and-popular section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+    }
+
 }
