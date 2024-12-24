@@ -609,5 +609,73 @@
         border-radius: 20px;
         padding: 30px;
     }
+    .popular {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 20px;
+        height: 252px;
+    }
+    .popular-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .popular-title h2 {
+        width: 369px;
+    }
+    .popular-title i {
+        width: 18px;
+        height: 15.75px;
+    }
+    .popular-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 369px;
+    }
+    .popular-card {
+        display: flex;
+        flex-direction: row;
+        width: 369px;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+    .popular-card img { /* Rectangle 24 */
+        width: 33%;
+        height: 136px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        object-fit: cover;
+        box-sizing: border-box;
+        border: 5px solid #FFFFFF;
+    }
+    .popular-cards .card-content {
+        width: 67%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .popular-cards .card-title {
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .popular-cards .card-subtitle {
+        margin: 0;
+    }
+    .popular-cards .card-rating {
+        margin-bottom: 5px;
+    }
+
 
 }
