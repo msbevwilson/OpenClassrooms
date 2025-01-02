@@ -25,9 +25,9 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        width: 100%;
+        /* width: 100%; */
         padding: 0 50px;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
     .header {
         display: flex;
@@ -346,7 +346,7 @@
         border-radius: 20px;
             }
     .popular-card img { /* Rectangle 24 */
-                /* width: 33%; */
+        width: 33%;
         height: 136px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
@@ -464,8 +464,13 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
+    body {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
     .main-container {
-        padding: 0 15px;
+        padding: 0px;
     }
     /* .body {
         flex-direction: column;
@@ -474,6 +479,12 @@
         gap: 35px;
         width: 375px;
     } */
+    header {
+        margin: 8px !important;
+    }
+    .infogroup {
+        margin: 8px !important;
+    }
     .header {
         flex-direction: column;
         align-items: center;
@@ -508,8 +519,10 @@
         gap: 20px;
     }
     .accommodation-and-popular {
+        display: flex;
         flex-direction: column-reverse;
-        /* align-items: center; */
+        align-items: stretch;
+        gap: 0px;
     }
     .accommodation-and-popular section {
         background-color: white;
@@ -525,6 +538,7 @@
         flex-wrap: wrap;
     }
     .accommodation {
+        margin: 8px !important;
         background-color: white;
         display: flex;
         padding: 20px;
@@ -532,11 +546,27 @@
         /* width: 375px; */
         flex-grow: 0;
     }
+    .accommodation h2 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding: 20px 20px 0px 20px;
+    }
     .accommodation-container {
         flex-direction: column;
     }
+    .accommodation-card {
+        padding: 0px 20px;
+    }
+    .popular-title {
+        padding: 30px 20px 0px 20px;
+    }
+    .popular-title h2 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
     .popular-cards {
         align-items: stretch;
+        padding: 20px 20px 30px 20px;
     }
     .popular-card img { /* Rectangle 24 */
         display: flex;
@@ -549,7 +579,7 @@
         border: 5px solid #FFFFFF;
     }
     .activities {
-        /* width: 375px; */
+        margin: 8px !important;
     }
     .activities-container {  
         flex-direction: column;
@@ -564,6 +594,7 @@
         height: 141px;
     }
     .footer {
+        margin: 8px !important;
         flex-direction: column;
         padding: 30px;
         gap: 50px;
