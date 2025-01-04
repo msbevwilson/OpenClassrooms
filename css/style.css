@@ -240,13 +240,12 @@
     .accommodation-container { /* frame 15 */
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
         gap: 30px;
     }
     .accommodation-card { /* Card/Main */
         display: flex;
         flex-direction: column;
-        padding: 0px 0px 15px;
+        padding: 0px 20px 15px;
         /* gap: 4px; */
         /* width: 250.33px; */
         height: 207.25px;
@@ -545,6 +544,8 @@
         gap: 15px;
         /* width: 375px; */
         flex-grow: 0;
+        flex-direction: column;
+        align-items: stretch;
     }
     .accommodation h2 {
         margin-block-start: 0px;
@@ -556,6 +557,37 @@
     }
     .accommodation-card {
         padding: 0px 20px;
+    }
+    .accommodation-card-content { /* Frame 16 */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 15px;
+        gap: 8px;
+        /* width: 250.33px; */
+        height: 64.25px;
+        justify-content: center;
+    }
+    .accommodation-card-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        /* width: 220.33px; */
+        height: 19px;
+    }
+    .accommodation-card-subtitle {
+        /* width: 220.33px; */
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        /* width: 220.33px; */
+        height: 16px;
+    }
+    .accommodation-card-rating {
+        height: 13.25px;
+        flex: none;
+        flex-grow: 0;
     }
     .popular-title {
         padding: 30px 20px 0px 20px;
