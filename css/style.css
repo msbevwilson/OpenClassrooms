@@ -264,12 +264,12 @@
     .accommodation-card-content { /* Frame 16 */
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         padding: 0px 15px;
-        gap: 8px;
+        /* gap: 8px; */
         /* width: 250.33px; */
-        height: 64.25px;
-        justify-content: center;
+        /* height: 64.25px; */
+        /* justify-content: center; */
     }
     .accommodation-card-title { /* Hôtel du port */ /* Card/Title */
         font-family: 'Raleway';
@@ -277,7 +277,7 @@
         font-weight: 700;
         font-size: 16px;
         /* width: 220.33px; */
-        height: 19px;
+        /* height: 19px; */
     }
     .accommodation-card-subtitle { /* Nuit à partir de 52€ */
         /* width: 220.33px; */
@@ -285,7 +285,7 @@
         font-weight: 400;
         font-size: 14px;
         /* width: 220.33px; */
-        height: 16px;
+        /* height: 16px; */
     }
     .dollar {
         font-size: 14px;
@@ -293,13 +293,14 @@
         line-height: 16.44px;
         text-align: left;
     }
-    .accommodation-card-rating { /* Stars */
+    .accommodation-card-rating {
         height: 13.25px;
         flex: none;
         flex-grow: 0;
     }
     .neutralStar {
         color: var(--main-bg-color);
+        display: flex;
     }
     .accommodation-show-more {
         font-style: normal;
@@ -365,11 +366,23 @@
         border-bottom-right-radius: 20px;
     }
     .popular-cards .card-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
         margin-top: 10px;
         margin-bottom: 4px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     .popular-cards .card-subtitle {
+        font-family: 'Raleway';
+        font-style: normal;
+        /* font-weight: 700; */
+        font-size: 14px;
         margin: 0;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     .popular-cards .card-rating {
         margin-bottom: 5px;
@@ -528,14 +541,6 @@
         border-radius: 0px;
         padding: 0px;
     }
-    .popular {
-        background-color: var(--main-bg-color) !important;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        align-content: stretch;
-        flex-wrap: wrap;
-    }
     .accommodation {
         margin: 8px !important;
         background-color: white;
@@ -558,36 +563,36 @@
     .accommodation-card {
         padding: 0px 20px;
     }
-    .accommodation-card-content { /* Frame 16 */
+    .accommodation-card-content {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         padding: 0px 15px;
         gap: 8px;
-        /* width: 250.33px; */
-        height: 64.25px;
-        justify-content: center;
+        align-self: stretch;
+        align-items: stretch;
     }
     .accommodation-card-title {
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        /* width: 220.33px; */
-        height: 19px;
+        display: flex;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     .accommodation-card-subtitle {
-        /* width: 220.33px; */
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        /* width: 220.33px; */
+        display: flex;
         height: 16px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     .accommodation-card-rating {
-        height: 13.25px;
-        flex: none;
-        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .popular {
+        background-color: var(--main-bg-color) !important;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: stretch;
+        flex-wrap: wrap;
     }
     .popular-title {
         padding: 30px 20px 0px 20px;
@@ -600,7 +605,10 @@
         align-items: stretch;
         padding: 20px 20px 30px 20px;
     }
-    .popular-card img { /* Rectangle 24 */
+    .popular-card {
+        display: flex;
+    }
+    .popular-card img {
         display: flex;
         /* width: 33%; */
         height: 136px;
@@ -609,6 +617,29 @@
         object-fit: cover;
         box-sizing: border-box;
         border: 5px solid #FFFFFF;
+    }
+    .popular-card .card-content {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .popular-card .card-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 5px;
+    }
+    .popular-card .card-title {
+        display:flex;
+    }
+    .popular-card .card-subtitle {
+        display: flex;
+        /* margin: 0; */
+    }
+    .popular-card .card-rating {
+        display: flex;
     }
     .activities {
         margin: 8px !important;
@@ -624,6 +655,12 @@
     .activities-card img {
         /* width: 315px; */
         height: 141px;
+    }
+    .activities-card .card-txt {
+
+
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     .footer {
         margin: 8px !important;
@@ -646,6 +683,10 @@
     .footerLink {
         /* width: 239.2px; */
         height: 19px;
+    }
+    .fa-solid, .fa-regular {
+        display: flex;
+        line-height: unset;
     }
 }
 
