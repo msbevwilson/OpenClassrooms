@@ -401,7 +401,7 @@
         line-height: 26px;
         color: #000000;
     }
-    .activities-container {  
+    .activities-container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -648,8 +648,8 @@
         flex-direction: column;
     }
     .activities-card{
-        align-items: center;
-        /* width: 315px; */
+        display: flex;
+        width: 315px;
         height: 200px;
     }
     .activities-card img {
@@ -657,11 +657,11 @@
         height: 141px;
     }
     .activities-card .card-txt {
-
-
+        display: flex;
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
+    
     .footer {
         margin: 8px !important;
         flex-direction: column;
