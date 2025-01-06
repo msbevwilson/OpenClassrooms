@@ -1,19 +1,28 @@
 /****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+.fa-solid, .fa-regular {
+    color: var(--main-color);
+}
+
+@media (min-width: 1441px) {
+    body {
+        width: 1440px;
+
+    }
+    
+}
 @media (max-width: 1440px) {
-    * {
-        font-family: 'Raleway', sans-serif;
-    }
-    :root {
-        --main-color: #0065FC;
-        --main-bg-color: #F2F2F2;
-        --filter-bg-color: #DEEBFF;
-    }
-    .fa-solid, .fa-regular {
-        color: var(--main-color);
-    }
+
     body {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
     header main footer .card-txt {
         flex: 1 1 auto;
@@ -236,6 +245,14 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
+        width: 871px;
+        height: 614px;
+    }
+    .accommodation h2 {
+        display: flex;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding: unset;
     }
     .accommodation-container { /* frame 15 */
         display: flex;
