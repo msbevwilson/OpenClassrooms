@@ -254,55 +254,63 @@
         margin-block-end: 0px;
         padding: unset;
     }
-    .accommodation-container { /* frame 15 */
+    .accommodation-container {
         display: flex;
         flex-direction: row;
         gap: 30px;
+        width: 811px;
+        justify-content: space-between;
     }
     .accommodation-card { /* Card/Main */
         display: flex;
         flex-direction: column;
-        padding: 0px 20px 15px;
-        /* gap: 4px; */
-        /* width: 250.33px; */
+        align-items: center;
+        padding: 0px 0px 15px;
+        gap: 4px;
+        width: 250.33px;
         height: 207.25px;
         background: #FFFFFF;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
     }
-    .accommodation-card img { /* Rectangle 20 */
+    .accommodation-card img {
+        display: flex;
         object-fit: cover;
         box-sizing: border-box;
-        /* width: 250.33px; */
         height: 124px;
         border: 5px solid #FFFFFF;
         border-radius: 20px 20px 0px 0px;
+        width: 250.33px;
+        height: 124px;
+        gap: 0px;
+        border-radius: 20px 20px 0px 0px;
+        border: 5px 0px 0px 0px;
     }
-    .accommodation-card-content { /* Frame 16 */
+    .accommodation-card-content {
         display: flex;
         flex-direction: column;
-        /* align-items: flex-start; */
+        align-items: flex-start;
+        gap: 8px;
+        width: 250.33px;
+        height: 64.25px;
         padding: 0px 15px;
-        /* gap: 8px; */
-        /* width: 250.33px; */
-        /* height: 64.25px; */
-        /* justify-content: center; */
     }
-    .accommodation-card-title { /* Hôtel du port */ /* Card/Title */
+    .accommodation-card-title { 
+        display: flex;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        /* width: 220.33px; */
-        /* height: 19px; */
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding: 0px 15px;
     }
     .accommodation-card-subtitle { /* Nuit à partir de 52€ */
-        /* width: 220.33px; */
+        display: flex;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        /* width: 220.33px; */
-        /* height: 16px; */
+        padding: 0px 15px;
     }
     .dollar {
         font-size: 14px;
@@ -311,9 +319,11 @@
         text-align: left;
     }
     .accommodation-card-rating {
+        display: flex;
         height: 13.25px;
         flex: none;
         flex-grow: 0;
+        padding: 0px 15px;
     }
     .neutralStar {
         color: var(--main-bg-color);
