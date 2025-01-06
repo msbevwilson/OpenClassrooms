@@ -242,24 +242,19 @@
         flex-direction: row;
         gap: 30px;
     }
-    .accommodation-card { /* Card/Main */
+    .accommodation-card {
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         padding: 0px 0px 15px;
         gap: 4px;
         width: 268px;
         display: flex;
         flex-direction: column;
-        /* padding: 0px 20px 15px; */
-        /* gap: 4px; */
-        /* width: 250.33px; */
-        /* height: 207.25px; */
         background: #FFFFFF;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
     }
-    .accommodation-card img { /* Rectangle 20 */
+    .accommodation-card img { 
         display: flex;
         object-fit: cover;
         box-sizing: border-box;
@@ -325,19 +320,25 @@
     .popular {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 30px;
+        align-items: stretch;
+        align-content: stretch;
+        flex-wrap: wrap;
+/*         padding: 30px;
         gap: 20px;
-        height: 252px;
+        height: 252px; */
     }
     .popular-title {
         display: flex;
         flex-direction: row;
-        /* width: 864px; */
-        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 864px;
+    }
+    .popular-title h2 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     .popular-title i {
-        display: flex;
         /* width: 18px; */
         height: 15.75px;
     }
@@ -363,7 +364,7 @@
         border-radius: 20px;
         flex: 1 1 auto;
     }
-    .popular-card img { /* Rectangle 24 */
+    .popular-card img { 
         display: flex;
         width: 33%;
         height: 146px;
@@ -372,22 +373,17 @@
         object-fit: cover;
         box-sizing: border-box;
         border: 5px solid #FFFFFF;
-        border-radius: 5px 0px 5px 5px;
     }
     .popular-card .card-txt {
         display: flex;
         flex-direction: column;
     }
     .popular-cards .card-content {
-        /* width: 67%; */
-        /* padding-left: 15px; */
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
-        box-sizing: border-box;
-        background: white;
-        /* border-top-right-radius: 20px; */
-        /* border-bottom-right-radius: 20px; */
+        align-items: flex-start;
+        padding: 10px 5px 10px 15px;
+        gap: 24px;
     }
     .popular-cards .card-title {
         display: flex;
@@ -437,7 +433,6 @@
         width: 193.5px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        /* border-radius: 20px; */
         height: 200px;
         flex: none;
         flex-grow: 0;
