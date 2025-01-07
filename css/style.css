@@ -372,7 +372,7 @@
         box-sizing: border-box;
         border: 5px solid #FFFFFF;
     }
-    .popular-cards .card-content {
+    .popular-card .card-content {
         /* width: 67%; */
         padding-left: 15px;
         display: flex;
@@ -383,7 +383,7 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-    .popular-cards .card-title {
+    .popular-card .card-title {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
@@ -393,7 +393,7 @@
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
-    .popular-cards .card-subtitle {
+    .popular-card .card-subtitle {
         font-family: 'Raleway';
         font-style: normal;
         /* font-weight: 700; */
@@ -402,7 +402,7 @@
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
-    .popular-cards .card-rating {
+    .popular-card .card-rating {
         margin-bottom: 5px;
     }
     .activities {
