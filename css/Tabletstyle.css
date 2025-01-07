@@ -60,6 +60,9 @@
         color: #0065FC;
         text-decoration: none;
     }
+    .menu:hover {
+
+    }
     .info-container {
         display: flex;
         flex-direction: column;
@@ -240,7 +243,10 @@
         width: 871px;
         height: 614px;
     }
-    .accommodation-container { /* frame 15 */
+    .accommodation h2 {
+
+    }
+    .accommodation-container { 
         display: flex;
         flex-direction: row;
         gap: 30px;
