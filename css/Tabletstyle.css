@@ -313,6 +313,7 @@
         font-weight: 700;
         line-height: 16.44px;
         text-align: left;
+        padding-left: 3px;
     }
     .accommodation-card-rating {
         display: flex;
