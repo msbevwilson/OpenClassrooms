@@ -1,25 +1,16 @@
 /****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-}
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
-.fa-solid, .fa-regular {
-    color: var(--main-color);
-}
-
-@media (min-width: 1441px) {
-    body {
-        width: 1440px;
-
-    }
-    
-}
 @media (max-width: 1440px) {
-
+    * {
+        font-family: 'Raleway', sans-serif;
+    }
+    :root {
+        --main-color: #0065FC;
+        --main-bg-color: #F2F2F2;
+        --filter-bg-color: #DEEBFF;
+    }
+    .fa-solid, .fa-regular {
+        color: var(--main-color);
+    }
     body {
         display: flex;
         flex-direction: column;
@@ -767,4 +758,3 @@
         background-color: yellow;
     }
 } */
-
