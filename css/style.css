@@ -738,7 +738,7 @@
         padding: 20px;
         gap: 15px;
         width: 375px;
-        height: 1435.5px;
+        height: 1400px;
     }
     .accommodation h2 {
         width: 335px;
@@ -795,6 +795,7 @@
         padding: 30px 20px;
         gap: 15px;
         height: 569px;
+        width: unset;
     }
     .popular-title {
         width: 335px;
@@ -840,7 +841,6 @@
         height: unset;
     }
     .activities-card{
-        width: 315px;
         height: 200px;
         align-self: stretch;
     }
