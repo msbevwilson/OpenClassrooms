@@ -493,14 +493,13 @@
         align-items: flex-start;
         padding: 0px;
         gap: 30px;
-        justify-content: center;
         width: 1024px;
     }
     .main-container {
         padding: 0 50px;
     }
     .header {
-        width: 1024px;
+        width: 950px;
     }
     .nav {
         width: 385px;
