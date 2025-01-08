@@ -12,15 +12,12 @@
     .fa-solid, .fa-regular {
         color: var(--main-color);
     }
+    .flex {
+        display: flex;
+    }
     body {
         display: flex;
         flex-direction: column;
-    }
-    header main footer .card-txt {
-        flex: 1 1 auto;
-    }
-    .flex {
-        display: flex;
     }
     .main-container {
         display: flex;
@@ -145,8 +142,6 @@
         padding: 0px;
         gap: 15px;
         height: 50px;
-        flex: none;
-        flex-grow: 0;
         z-index: 2;
         font-style: normal;
         font-weight: 700;
@@ -154,7 +149,6 @@
         line-height: 21px;
         text-align: center;
         color: #000000;
-        flex-grow: 0;
     }
     .filter-bars {
         display: flex;
@@ -295,8 +289,6 @@
     .accommodation-card-rating {
         display: flex;
         height: 13.25px;
-        flex: none;
-        flex-grow: 0;
     }
     .neutralStar {
         color: var(--main-bg-color);
@@ -308,8 +300,6 @@
         font-size: 18px;
         line-height: 21px;
         color: #000000;
-        flex: none;
-        flex-grow: 0;
     }
     .popular {
         display: flex;
@@ -409,8 +399,6 @@
         align-items: flex-start;
         padding: 30px;
         gap: 30px;
-        /* width: 1340px; */
-        /* height: 559.02px; */
         align-self: stretch;
     }
     .activities-title {
@@ -420,9 +408,6 @@
         line-height: 26px;
         text-align: left;
         color: #000000;
-        /* width: 1280px; */
-        /* height: 30.02px; */
-        /* align-self: stretch; */
     }
     .activities-container {
         display: flex;
@@ -479,36 +464,30 @@
         height: 163px;
         background: #F2F2F2;
     }
-    .footerContainer {
+    .footer-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
         gap: 15px;
-        flex: none;
         flex-grow: 1;
     }
-    .footerHeader {
+    .footer-heading {
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
         color: #000000;
-        flex: none;
-        flex-grow: 0;
     }
-    .footerLink {
+    .footer-link {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         color: #000000;
-        flex: none;
-        flex-grow: 0;
     }
 }
 
-/* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
         align-items: flex-start;
@@ -519,6 +498,9 @@
     }
     .main-container {
         padding: 0 50px;
+    }
+    .header {
+        width: 1024px;
     }
     .nav {
         width: 385px;
@@ -636,31 +618,26 @@
         background: #F2F2F2;
         align-self: stretch;
     }
-    .footerContainer {
+    .footer-container {
         width: 288px;
         height: 163px;
     }
-    .footerHeader {
+    .footer-heading {
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
         color: #000000;
-        flex: none;
-        flex-grow: 0;
     }
-    .footerLink {
+    .footer-link {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         color: #000000;
-        flex: none;
-        flex-grow: 0;
     }
 }
 
-/* Media Query for Mobile Devices */
 @media (min-width: 320px) and (max-width: 767px) {
     .fa-solid, .fa-regular {
         display: flex;
@@ -861,11 +838,11 @@
         gap: 50px;
         height: 461px;
     }
-    .footerContainer {
+    .footer-container {
         padding: 0px;
         width: 263.67px;
     }
-    .footerHeader {
+    .footer-heading {
         height: 21px;
     }
 }
@@ -899,5 +876,3 @@
         border-top: 2px solid #0065FC;
     }
 }
-
-
