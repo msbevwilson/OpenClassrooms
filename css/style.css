@@ -221,7 +221,7 @@
         width: 871px;
         height: 614px;
     }
-    .accommodation h2 {
+    .accommodation-title {
         display: flex;
         margin-block-start: 0px;
         margin-block-end: 0px;
@@ -401,7 +401,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 30px;
+        padding: 0px 30px 30px 30px;
+        /* padding: 30px; */
         gap: 30px;
         align-self: stretch;
     }
@@ -731,19 +732,27 @@
     .accommodation {
         margin: 8px !important;
         background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         padding: 20px;
         gap: 15px;
         width: 375px;
-        height: 1400px;
+        height: 1435.5px;
+        align-self: stretch;
     }
-    .accommodation h2 {
+    .accommodation-title {
         width: 335px;
         height: 26px;
-        font-family: 'Raleway';
+        /* font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
-        line-height: 26px;
+        line-height: 26px; */
+    }
+    .accommodation-title h2 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     .accommodation-container {
         flex-direction: column;
@@ -788,13 +797,23 @@
     }
     .popular {
         background-color: var(--main-bg-color) !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 30px 20px;
         gap: 15px;
+        width: 375px;
         height: 569px;
-        width: unset;
+        align-self: stretch;
     }
     .popular-title {
         width: 335px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 369px;
+        height: 26px;
     }
     .popular-card {
         width: 335px;
