@@ -42,15 +42,30 @@
     .logo img {
         height: 19px;
     }
-    .nav {
-        display: flex;
-        flex-direction: row;
-        gap: 68px;
-    }
     .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 50px;
+        gap: 68px;
+        width: 385px;
         height: 35px;
     }
-    .menu a {
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 68px;
+        width: 285px;
+        height: 35px;
+    }
+    .button {
+        width: 123px;
+        height: 35px;
+    }
+    .button a {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -507,12 +522,27 @@
     .header {
         width: 950px;
     }
-    .nav {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 50px;
+        gap: 68px;
         width: 385px;
         height: 35px;
-        justify-content: space-around;
     }
-    .menu {
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 68px;
+        width: 285px;
+        height: 35px;
+    }
+    .button {
+        width: 123px;
         height: 35px;
     }
     .fa-location-dot {
@@ -668,9 +698,31 @@
         padding: 30px;
     }
     .menu {
-        height: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 15px;
+        width: 375px;
+        height: 36px;
+        align-self: stretch;
     }
-    .menu:hover {
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        width: 375px;
+        height: 19px;
+        align-self: stretch;
+    }
+    .button {
+        display: flex;
+        width: 187.5px;
+        height: 19px;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .button:hover {
         border-bottom: 2px solid #0065FC;
     }
     .infogroup {
@@ -910,7 +962,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .menu:hover {
+    .button:hover {
         border-top: 2px solid #0065FC;
     }
 }
